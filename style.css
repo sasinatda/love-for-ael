@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#ffd6e8,#fff8fc);
+    overflow:hidden;
+    text-align:center;
+}
+
+.loading{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#ff4d88;
+}
+
+#app{
+    padding:20px;
+}
+
+h1{
+    color:#ff4d88;
+    margin-top:20px;
+}
+
+#photo{
+    width:280px;
+    max-width:90%;
+    border-radius:20px;
+    margin:20px auto;
+    display:block;
+    border:5px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+button{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:18px;
+    margin:15px;
+}
+
+.characters{
+    display:flex;
+    justify-content:space-around;
+    margin-top:30px;
+}
+
+.dog{
+    font-size:90px;
+    animation:jump 1s infinite;
+}
+
+.rabbit{
+    font-size:90px;
+    animation:shake .8s infinite alternate;
+}
+
+@keyframes jump{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+@keyframes shake{
+    from{transform:rotate(-10deg);}
+    to{transform:rotate(10deg);}
+}
+
+#dialog{
+    margin:25px auto;
+    background:white;
+    width:90%;
+    padding:20px;
+    border-radius:20px;
+    min-height:100px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    font-size:20px;
+}
